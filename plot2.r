@@ -16,5 +16,6 @@ datetime = paste(h$Date, h$Time)
 h$datetime<-as.POSIXct(datetime)
 #plot
 ## Plot 2
+png(file="Plot2.png", width=480, height=480)
 plot(as.numeric(h$Global_active_power)~h$datetime, type="l",ylab="Global Active Power (kilowatts)", xlab="")
-
+dev.off()
