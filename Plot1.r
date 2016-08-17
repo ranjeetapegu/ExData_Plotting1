@@ -12,6 +12,6 @@ hpc$Date<- as.Date(hpc$Date, format="%d/%m/%Y")
 h <- filter(hpc, Date >= "2007-02-01" & Date <= "2007-02-02"  )
 rm(hpc)
 nrow(h) ## 2880
-png(file="Plot3.png", width=480, height=480)
+png(file="Plot1.png", width=480, height=480)
 hist(as.numeric(h$Global_active_power), main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 dev.off()
